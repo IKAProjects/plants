@@ -4,6 +4,7 @@ import 'package:plants/src/domain/models/plant_model.dart';
 import 'package:plants/src/data/plant_repository.dart'; // Ensure to import the PlantRepository
 
 part 'plant_event.dart';
+
 part 'plant_state.dart';
 
 class PlantBloc extends Bloc<PlantEvent, PlantState> {
@@ -14,6 +15,24 @@ class PlantBloc extends Bloc<PlantEvent, PlantState> {
     on<AddPlant>(_onAddPlant);
     on<DeletePlant>(_onDeletePlant);
     on<UpdatePlant>(_onUpdatePlant);
+    on<LoadPlantDetailEvent>(_loadPlantDetail);
+  }
+
+  Future<void> _loadPlantDetail(
+    LoadPlantDetailEvent event,
+    Emitter<PlantState> emit,
+  ) async {
+    try {
+      // if (state is! PlantDetailState) {
+      //   emit(PlantLoading());
+      // }
+      final plant = await plantRepository.getPlantById(event.plantKey);
+      print(plant?.name.toString());
+
+      emit(PlantDetailState(plantModel: plant!));
+    } catch (e) {
+      emit(PlantError(e.toString()));
+    }
   }
 
   Future<void> _onLoadPlants(LoadPlants event, Emitter<PlantState> emit) async {
@@ -37,7 +56,10 @@ class PlantBloc extends Bloc<PlantEvent, PlantState> {
     }
   }
 
-  Future<void> _onDeletePlant(DeletePlant event, Emitter<PlantState> emit) async {
+  Future<void> _onDeletePlant(
+    DeletePlant event,
+    Emitter<PlantState> emit,
+  ) async {
     emit(PlantLoading());
     try {
       await plantRepository.deletePlant(event.plantId);
@@ -48,7 +70,10 @@ class PlantBloc extends Bloc<PlantEvent, PlantState> {
     }
   }
 
-  Future<void> _onUpdatePlant(UpdatePlant event, Emitter<PlantState> emit) async {
+  Future<void> _onUpdatePlant(
+    UpdatePlant event,
+    Emitter<PlantState> emit,
+  ) async {
     emit(PlantLoading());
     try {
       await plantRepository.updatePlant(event.plant);

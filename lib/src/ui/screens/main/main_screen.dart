@@ -156,7 +156,6 @@ class _MainScreenState extends State<MainScreen> {
                                         child: Image.file(
                                           File(plant.image!),
                                           fit: BoxFit.cover,
-                                          width: 160.w,
                                           height: 160.h,
                                         ),
                                       ),

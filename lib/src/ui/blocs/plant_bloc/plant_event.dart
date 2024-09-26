@@ -37,3 +37,12 @@ class UpdatePlant extends PlantEvent {
   @override
   List<Object?> get props => [plant];
 }
+
+final class LoadPlantDetailEvent extends PlantEvent{
+  final String plantKey;
+
+  const LoadPlantDetailEvent({required this.plantKey});
+
+  @override
+  List<Object?> get props => [plantKey];
+}

@@ -10,6 +10,10 @@ class PlantRepository {
     return plantBox.values.toList();
   }
 
+  Future<PlantModel?> getPlantById(String id)async{
+    return plantBox.get(id);
+  }
+
   Future<void> addPlant(PlantModel plant) async {
     await plantBox.put(plant.id, plant);
   }

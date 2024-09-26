@@ -33,8 +33,12 @@ class AppBottomBarState extends State<AppBottomBar> {
         children: [
           ClipRRect(
             child: Container(
-              color: AppColors.blue1B2228,
               height: 110.h,
+              decoration: BoxDecoration(
+                color: AppColors.blue1C2329.withOpacity(0.95),
+
+
+              ),
               width: MediaQuery.of(context).size.width,
               child: Column(
                 children: [
@@ -63,7 +67,7 @@ class AppBottomBarState extends State<AppBottomBar> {
             ),
           ),
           Positioned(
-            top: -40.h,
+            top: -50.h,
             left: MediaQuery.of(context).size.width / 2 - 50.w,
             child: AppButton(
               onPressed: () {
@@ -79,6 +83,7 @@ class AppBottomBarState extends State<AppBottomBar> {
                 fit: BoxFit.contain,
                 width: 100.w,
                 height: 100.h,
+
               ),
             ),
           ),

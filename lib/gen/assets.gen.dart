@@ -12,8 +12,35 @@ import 'package:flutter/widgets.dart';
 class $AssetsPngGen {
   const $AssetsPngGen();
 
+  /// File path: assets/png/aloe.png
+  AssetGenImage get aloe => const AssetGenImage('assets/png/aloe.png');
+
+  /// File path: assets/png/aloe2.png
+  AssetGenImage get aloe2 => const AssetGenImage('assets/png/aloe2.png');
+
+  /// File path: assets/png/aloe3.png
+  AssetGenImage get aloe3 => const AssetGenImage('assets/png/aloe3.png');
+
+  /// File path: assets/png/bamboo.png
+  AssetGenImage get bamboo => const AssetGenImage('assets/png/bamboo.png');
+
+  /// File path: assets/png/bamboo2.png
+  AssetGenImage get bamboo2 => const AssetGenImage('assets/png/bamboo2.png');
+
+  /// File path: assets/png/bamboo3.png
+  AssetGenImage get bamboo3 => const AssetGenImage('assets/png/bamboo3.png');
+
   /// File path: assets/png/bottom.png
   AssetGenImage get bottom => const AssetGenImage('assets/png/bottom.png');
+
+  /// File path: assets/png/cactus.png
+  AssetGenImage get cactus => const AssetGenImage('assets/png/cactus.png');
+
+  /// File path: assets/png/cactus2.png
+  AssetGenImage get cactus2 => const AssetGenImage('assets/png/cactus2.png');
+
+  /// File path: assets/png/cactus3.png
+  AssetGenImage get cactus3 => const AssetGenImage('assets/png/cactus3.png');
 
   /// File path: assets/png/container.png
   AssetGenImage get container =>
@@ -22,8 +49,46 @@ class $AssetsPngGen {
   /// File path: assets/png/empty_box.png
   AssetGenImage get emptyBox => const AssetGenImage('assets/png/empty_box.png');
 
+  /// File path: assets/png/fern.png
+  AssetGenImage get fern => const AssetGenImage('assets/png/fern.png');
+
+  /// File path: assets/png/fern2.png
+  AssetGenImage get fern2 => const AssetGenImage('assets/png/fern2.png');
+
+  /// File path: assets/png/fern3.png
+  AssetGenImage get fern3 => const AssetGenImage('assets/png/fern3.png');
+
+  /// File path: assets/png/lavender.png
+  AssetGenImage get lavender => const AssetGenImage('assets/png/lavender.png');
+
+  /// File path: assets/png/lavender2.png
+  AssetGenImage get lavender2 =>
+      const AssetGenImage('assets/png/lavender2.png');
+
+  /// File path: assets/png/lavender3.png
+  AssetGenImage get lavender3 =>
+      const AssetGenImage('assets/png/lavender3.png');
+
   /// File path: assets/png/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/png/logo.png');
+
+  /// File path: assets/png/maple.png
+  AssetGenImage get maple => const AssetGenImage('assets/png/maple.png');
+
+  /// File path: assets/png/maple2.png
+  AssetGenImage get maple2 => const AssetGenImage('assets/png/maple2.png');
+
+  /// File path: assets/png/maple3.png
+  AssetGenImage get maple3 => const AssetGenImage('assets/png/maple3.png');
+
+  /// File path: assets/png/mint.png
+  AssetGenImage get mint => const AssetGenImage('assets/png/mint.png');
+
+  /// File path: assets/png/mint2.png
+  AssetGenImage get mint2 => const AssetGenImage('assets/png/mint2.png');
+
+  /// File path: assets/png/mint3.png
+  AssetGenImage get mint3 => const AssetGenImage('assets/png/mint3.png');
 
   /// File path: assets/png/onb1.png
   AssetGenImage get onb1 => const AssetGenImage('assets/png/onb1.png');
@@ -34,15 +99,86 @@ class $AssetsPngGen {
   /// File path: assets/png/onb3.png
   AssetGenImage get onb3 => const AssetGenImage('assets/png/onb3.png');
 
+  /// File path: assets/png/orchid.png
+  AssetGenImage get orchid => const AssetGenImage('assets/png/orchid.png');
+
+  /// File path: assets/png/orchid2.png
+  AssetGenImage get orchid2 => const AssetGenImage('assets/png/orchid2.png');
+
+  /// File path: assets/png/orchid3.png
+  AssetGenImage get orchid3 => const AssetGenImage('assets/png/orchid3.png');
+
   /// File path: assets/png/plant.png
   AssetGenImage get plant => const AssetGenImage('assets/png/plant.png');
 
   /// File path: assets/png/plant_img.png
   AssetGenImage get plantImg => const AssetGenImage('assets/png/plant_img.png');
 
+  /// File path: assets/png/rosemary.png
+  AssetGenImage get rosemary => const AssetGenImage('assets/png/rosemary.png');
+
+  /// File path: assets/png/rosemary2.png
+  AssetGenImage get rosemary2 =>
+      const AssetGenImage('assets/png/rosemary2.png');
+
+  /// File path: assets/png/rosemary3.png
+  AssetGenImage get rosemary3 =>
+      const AssetGenImage('assets/png/rosemary3.png');
+
+  /// File path: assets/png/sunflower.png
+  AssetGenImage get sunflower =>
+      const AssetGenImage('assets/png/sunflower.png');
+
+  /// File path: assets/png/sunflower2.png
+  AssetGenImage get sunflower2 =>
+      const AssetGenImage('assets/png/sunflower2.png');
+
+  /// File path: assets/png/sunflower3.png
+  AssetGenImage get sunflower3 =>
+      const AssetGenImage('assets/png/sunflower3.png');
+
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [bottom, container, emptyBox, logo, onb1, onb2, onb3, plant, plantImg];
+  List<AssetGenImage> get values => [
+        aloe,
+        aloe2,
+        aloe3,
+        bamboo,
+        bamboo2,
+        bamboo3,
+        bottom,
+        cactus,
+        cactus2,
+        cactus3,
+        container,
+        emptyBox,
+        fern,
+        fern2,
+        fern3,
+        lavender,
+        lavender2,
+        lavender3,
+        logo,
+        maple,
+        maple2,
+        maple3,
+        mint,
+        mint2,
+        mint3,
+        onb1,
+        onb2,
+        onb3,
+        orchid,
+        orchid2,
+        orchid3,
+        plant,
+        plantImg,
+        rosemary,
+        rosemary2,
+        rosemary3,
+        sunflower,
+        sunflower2,
+        sunflower3
+      ];
 }
 
 class $AssetsSvgGen {

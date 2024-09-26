@@ -301,7 +301,6 @@ class _EditPlantScreenState extends State<EditPlantScreen> {
             );
 
             context.read<PlantBloc>().add(UpdatePlant(updatedPlant));
-
             Navigator.pop(context, true);
           }
         },

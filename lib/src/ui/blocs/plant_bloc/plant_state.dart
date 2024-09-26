@@ -55,3 +55,12 @@ final class PlantUpdated extends PlantState {
   @override
   List<Object?> get props => [plant];
 }
+
+final class PlantDetailState extends PlantState {
+  const PlantDetailState({required this.plantModel});
+
+  final PlantModel plantModel;
+
+  @override
+  List<Object?> get props => [plantModel];
+}
